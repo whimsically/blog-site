@@ -16,3 +16,14 @@ header, .post:not(:last-child) {
     color: #065b83;
     text-decoration: underline;
   }
+
+  header {
+    background-color: #1b89bc;
+    color: white;
+    text-decoration: none;
+  }
+
+  h1 > a:link, h1 > a:visited {
+    text-decoration: none;
+    color: white;
+  }

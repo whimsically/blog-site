@@ -12,6 +12,8 @@ N/A
 
 View the deployment [here](https://sleepy-reef-35718-76393a7d6bfc.herokuapp.com/).
 
+![Image of deployed app](demo.png)
+
 ## Credits
 
 As this was part of my studies in the KU Full Stack Web Development Bootcamp, I used our previous in class project as a reference.
