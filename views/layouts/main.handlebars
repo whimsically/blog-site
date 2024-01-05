@@ -2,16 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>dev blog</title>
 </head>
 <body>
     <header>
-        <h1>dev blog</h1>
+        <h1 class="text-center">dev blog</h1>
     </header>
-    <nav></nav>
+    
+    <nav>
+     {{#if logged_in}}
+        <a href="/dashboard">dashboard</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+    </nav>
     <main>
         {{{ body }}}
     </main>
+
+{{!-- logout script if logged in --}}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
 </body>
 </html>
